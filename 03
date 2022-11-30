@@ -1,0 +1,24 @@
+  //Suma
+  if ((buttonStateA ^ buttonStateC) && (!buttonStateE && buttonStateF && buttonStateG)) {
+    // turn LED on:
+    ledPinS0 = true;
+  } else {
+    // turn LED off:
+    ledPinS0 = false;
+  }
+
+  if ((buttonStateB ^ buttonStateD) ^ (buttonStateA && buttonStateC) && (!buttonStateE && buttonStateF && buttonStateG)) {
+    // turn LED on:
+    ledPinS1 = true;
+  } else {
+    // turn LED off:
+    ledPinS1 = false;
+  }
+
+  if ((buttonStateB && buttonStateD) && (!buttonStateE && buttonStateF && buttonStateG)) {
+    // turn LED on:
+    ledPinA0 = true;
+  } else {
+    // turn LED off:
+    ledPinA0 = false;
+  }
